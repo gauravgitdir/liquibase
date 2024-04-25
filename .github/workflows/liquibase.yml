@@ -15,6 +15,6 @@ jobs:
 
     - name: Execute Liquibase
       run: |
-        # liquibase.bat --changeLogFile=001_create_table.xml --defaultsFile=liquibase.properties update
+        # liquibase.bat --changeLogFile=001_create_table.xml --defaultsFile=liquibase.properties update 
           liquibase.bat --changeLogFile=changelogs/changesets/001_create_table.xml --defaultsFile=liquibase.properties update
       shell: cmd
