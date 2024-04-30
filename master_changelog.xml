@@ -5,12 +5,12 @@
                                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
     <!-- Include the changeset to create a table -->
-    <include file="001_create_table.xml"/>
+    <include file="changelogs/changesets/001_create_table.xml"/>
 
     <!-- Include the changeset to add a column -->
-    <include file="002_add_column.xml"/>
+    <include file="changelogs/changesets/002_add_column.xml"/>
 
     <!-- Include the changeset to insert data -->
-    <include file="003_insert_data.xml"/>
+    <include file="changelogs/changesets/003_insert_data.xml"/>
 
 </databaseChangeLog>
