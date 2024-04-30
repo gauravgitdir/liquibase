@@ -1,6 +1,0 @@
-changelogs/
-    master_changelog.xml
-    changesets/
-        001_create_table.xml
-        002_add_column.xml
-        003_insert_data.xml

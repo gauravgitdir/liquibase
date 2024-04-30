@@ -5,7 +5,7 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
     <changeSet id="003" author="john.doe">
-        <sql>INSERT INTO example_table_new (id, name, age) VALUES (1, 'John', 30);</sql>
+        <sql>INSERT INTO example_table_new (id, name, age, email) VALUES (1, 'John', 30 , 'xyz@gmail.com');</sql>
     </changeSet>
 
 </databaseChangeLog>
