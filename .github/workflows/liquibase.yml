@@ -1,0 +1,20 @@
+name: Liquibase CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Execute Liquibase
+      run: |
+         # liquibase.bat --changeLogFile=001_create_table.xml --defaultsFile=liquibase.properties update 
+          liquibase.bat --changeLogFile=changelogs/changesets/001_create_table.xml --defaultsFile=liquibase.properties update
+      shell: cmd
