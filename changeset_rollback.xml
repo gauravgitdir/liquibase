@@ -8,7 +8,7 @@
     <dropColumn tableName="example_table_new" columnName="age"/>
         </rollback>
 	<sql>
-            UPDATE person SET age = null;
+            UPDATE example_table_new SET age = null;
         </sql>
     </changeSet>
 
